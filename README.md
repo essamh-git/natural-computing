@@ -45,4 +45,25 @@ For Parts 2 and 3, run the task code first, because it saves its results to a `.
 
 Part 2 takes about 3 minutes and Part 3 about 15 minutes.
 
+## Week 4: Finding the Brightest Area with DFO
+
+DFO adapted to search an image: each fly is a pixel position (x, y), and its fitness is the brightness around it. Covers finding the brightest area, other images, switching images half-way, a moving object, a fading and emerging object, and two bright spots:
+
+| File | Purpose |
+|---|---|
+| `week-4/DFOImage.py` | DFO for images, plus helpers for making and loading test images (imported by the other two files) |
+| `week-4/Week4Experiments.py` | Runs every task and saves the results to `week4_results.npz` |
+| `week-4/Week4Figures.py` | Draws the figures and the moving-object animation from the saved results |
+
+Keep all three files in the same folder, then run:
+
+    python week-4/Week4Experiments.py
+    python week-4/Week4Figures.py
+
+The experiments take about 1–2 minutes.
+
+## Credits
+
 The DFO algorithm is based on the original Python implementation by Mohammad Majid al-Rifaie ([github.com/mohmaj/DFO](https://github.com/mohmaj/DFO)), licensed under the GNU GPL.
+
+
