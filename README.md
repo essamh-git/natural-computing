@@ -4,7 +4,8 @@ Code for my Natural Computing wiki (University of Greenwich).
 
 Install the requirements once:
 
-    pip install numpy matplotlib
+    pip install numpy scipy scikit-image matplotlib pillow pandas ortools
+    pip install --use-pep517 ypstruct
 
 ## Week 1: No Free Lunch Theorem
 
@@ -62,8 +63,27 @@ Keep all three files in the same folder, then run:
 
 The experiments take about 1–2 minutes.
 
+## Week 5: Genetic Algorithm
+
+The real-coded GA from the Yarpiz course compared with DFO, then GAs applied to the Travelling Salesman Problem (TSP) and a card-splitting puzzle:
+
+| Part | Task code | Figures |
+|---|---|---|
+| Part 1: GA vs DFO (30 dimensions, Sphere and Rastrigin) | `Natural_Camp_5/GA_vs_DFO.py` | `Natural_Camp_5/Week5Figures.py` |
+| Part 2: GA vs TSP (tutorial vs improvements) | `Natural_Camp_5/TSPExperiments.py` | `Natural_Camp_5/TSPFigures.py`, `Natural_Camp_5/FigureMutationDiagram.py` |
+| Part 3: TSP challenge (8 UK cities) | `Natural_Camp_5/TSPChallenge.py` | `Natural_Camp_5/TSPChallengeFigures.py` |
+| Part 4: card game (generational vs steady-state GA) | `Natural_Camp_5/CardsExperiments.py` | `Natural_Camp_5/CardsFigures.py` |
+
+Some files are imported by others, so keep them all in the same folder:
+
+- `ga.py` (the Yarpiz course code, unchanged) is used by Part 1
+- `TSPTutorial.py` and `TSPImproved.py` are used by Part 2
+- `CardsGA.py` is used by Part 4
+
+As in Weeks 3 and 4, run the task code first, then the figure script from the same folder. Part 1 takes about 20 minutes, Part 2 about 8 minutes, Part 3 a few seconds and Part 4 about 30 seconds.
+
 ## Credits
 
-The DFO algorithm is based on the original Python implementation by Mohammad Majid al-Rifaie ([github.com/mohmaj/DFO](https://github.com/mohmaj/DFO)), licensed under the GNU GPL.
-
-
+- The DFO algorithm (Weeks 3–5) is based on the original Python implementation by Mohammad Majid al-Rifaie ([github.com/mohmaj/DFO](https://github.com/mohmaj/DFO)), licensed under the GNU GPL.
+- `ga.py` (Week 5) is from *Practical Genetic Algorithms in Python and MATLAB* by Mostapha Kalami Heris ([Yarpiz](https://yarpiz.com/632/ypga191215-practical-genetic-algorithms-in-python-and-matlab)).
+- `tsp_tutorial.py` (Week 5) is from Eric Stoltz's genetic algorithm tutorial ([github.com/ezstoltz/genetic-algorithm](https://github.com/ezstoltz/genetic-algorithm)).
