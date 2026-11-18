@@ -82,8 +82,27 @@ Some files are imported by others, so keep them all in the same folder:
 
 As in Weeks 3 and 4, run the task code first, then the figure script from the same folder. Part 1 takes about 20 minutes, Part 2 about 8 minutes, Part 3 a few seconds and Part 4 about 30 seconds.
 
+## Week 7: Stochastic Diffusion Search
+
+SDS for finding a word in a sentence (no perfect match, two matches, and the context-free and context-sensitive modes), then for finding a small image inside a large one with different micro-features:
+
+| Part | Task code | Figures |
+|---|---|---|
+| Running SDS: time to all-active, no perfect match, two matches | `Natural_Camp_7/Week7Experiments.py` | `Natural_Camp_7/Week7Figures.py` |
+| Context-free and context-sensitive modes | `Natural_Camp_7/Week7Optional.py` | `Natural_Camp_7/Week7OptionalFigures.py` |
+| Part 2: micro-features for image search | `Natural_Camp_7/Week7MicroExperiments.py` | `Natural_Camp_7/Week7MicroFigures.py` |
+
+Some files are imported by others, so keep them all in the same folder:
+
+- `SDS.py` (the lecturer's SDS as a function) is used by `Week7Experiments.py`
+- `SDSModes.py` (SDS with the context-free and context-sensitive modes) is used by `Week7Optional.py`
+- `SDSImage.py` (SDS for images, with four micro-features) is used by `Week7MicroExperiments.py`
+
+As before, run the task code first, then the figure script from the same folder. The experiments take about 3, 11 and 10 minutes.
+
 ## Credits
 
 - The DFO algorithm (Weeks 3–5) is based on the original Python implementation by Mohammad Majid al-Rifaie ([github.com/mohmaj/DFO](https://github.com/mohmaj/DFO)), licensed under the GNU GPL.
+- The SDS algorithm (Week 7) is based on the original Python implementation by Mohammad Majid al-Rifaie ([github.com/mohmaj/SDS](https://github.com/mohmaj/SDS)), licensed under the GNU GPL v3.
 - `ga.py` (Week 5) is from *Practical Genetic Algorithms in Python and MATLAB* by Mostapha Kalami Heris ([Yarpiz](https://yarpiz.com/632/ypga191215-practical-genetic-algorithms-in-python-and-matlab)).
-- `tsp_tutorial.py` (Week 5) is from Eric Stoltz's genetic algorithm tutorial ([github.com/ezstoltz/genetic-algorithm](https://github.com/ezstoltz/genetic-algorithm)).
+- `TSPTutorial.py` (Week 5) is from Eric Stoltz's genetic algorithm tutorial ([github.com/ezstoltz/genetic-algorithm](https://github.com/ezstoltz/genetic-algorithm)).
